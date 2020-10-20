@@ -1,3 +1,137 @@
-body {
-    background-color:purple;
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* ----- Utility Styles ---- */
+
+.container{
+  width:85vw;
+  margin:40px auto;
+  max-width:900px
+}
+
+/* ---- Responsive Images ----*/
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ----- Global Styles ---- */
+
+body{
+font-family: 'Lato', sans-serif;
+  margin:0;
+}
+
+header.primary{
+  background-color:#3b638b;
+  text-align:center;
+  color:#ffffff;
+  text-shadow: 2px 2px #000000;
+  
+ 
+  
+  /* Shorhand Top/Bottom, Left/Right*/
+  padding: 20px 40px;
+}
+
+header.primary h1{
+  font-family: 'Tangerine', serif;
+  font-size: 3.3rem;
+  margin: 18px 0;
+}
+
+header.primary h1 a{
+  color:#000000;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:2em;
+  /* Shorhand Three Value Top, Left/Right, Bottom*/
+  margin: 20px auto 40px;
+}
+
+header.primary nav li{
+  list-style-type:none;
+  padding:0;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding:0;
+  max-width:700px;
+  margin:20px auto;
+
+}
+
+header.primary nav a:link, header.primary nav a:visited{
+  color:white;
+  text-decoration:none;
+  background-color: #000000;
+  background-color: rgba(0,0,0,.4);
+  padding:8px 16px;
+  border-radius: 15px;
+  transition:.6s;
+}
+
+header.primary nav a:hover, header.primary nav a:active{
+  background-color: rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 2px solid #c0c0c0;
+  padding-bottom:1.5em
+}
+
+#intro h2 {
+  color:#e305eb;
+}
+
+#intro p{
+  line-height:1.5;
+}
+
+section#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom: 2.4em;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  transition:.6s;
+  font-size:.8rem;
+}
+
+#content article.post:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+
+#content article time, #content article figcaption, #content article footer{
+  font-size:.8em;
+  color:#c0c0c0;
+  text-transform:uppercase;
+}
+
+#content .post a:link, #content .post a:visited{
+  color:#e305eb;
+}
+
+
+
+
