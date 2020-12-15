@@ -121,6 +121,7 @@ div.container {
   position: relative;
   text-align: center;
   color: white;
+  max-width: 900px;
 }
 
 
@@ -163,13 +164,13 @@ header.primary h2{
 
 /*  Nav Links  */
 
-header.primary nav li {
+header.primary nav li{
   list-style-type:none;
   padding:0;
   width: 20%;
 }
 
-header.primary nav ul {
+header.primary nav ul{
   position:relative;
   display: flex;
   flex-direction: row;
@@ -208,13 +209,13 @@ header.primary nav a:hover, header.primary nav a:active{
   text-shadow: 2px 2px   #444444;
 }
 
-.section#content table {
+.section#content table{
     width: 100%;
     border:20px solid #ffffff;
     
   }
 
-#intro {
+#intro{
   border-bottom: 1px solid #c0c0c0;
   padding-bottom:4em
 }
@@ -224,11 +225,11 @@ header.primary nav a:hover, header.primary nav a:active{
 
 }
 
-#intro p {
+#intro p{
   line-height:1.5;
 }
 
-.section#content {
+.section#content{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
@@ -542,9 +543,7 @@ table, th, tr{
   border-collapse:collapse;
   margin: 5px;
 }
-
-
-table {
+table{
   margin: 0 auto;
 }
 
